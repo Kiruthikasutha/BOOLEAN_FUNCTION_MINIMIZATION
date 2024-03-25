@@ -34,22 +34,24 @@ Hardware – PCs, Cyclone II , USB flasher
 **Program:**
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+ 
 
-Developed by: RegisterNumber:*/
+Developed by: KIRUTHIKA M
+RegisterNumber:212223040098
+## program
+## module combinationalcircuit(A,B,C,D,F1);
+## input A,B,C,D;
+## output F1;
+## wire x1,x2,x3,x4,x5;
+## assign x1=(~A)&(~B)&(~C)&(~D);
+## assign x2=(A)&(~C)&(~D);
+## assign x3=(~B)&(C)&(~D);
+## assign x4=(~A)&(B)&(C)&(D);
+## assign x5=(B)&(~C)&(D);
+## assign F1=x1|x2|x3|x4|x5;
+## endmodule 
 
-**program**
 
-module combinationalcircuit(A,B,C,D,F1);
-input A,B,C,D;
-output F1;
-wire x1,x2,x3,x4,x5;
-assign x1=(~A)&(~B)&(~C)&(~D);
-assign x2=(A)&(~C)&(~D);
-assign x3=(~B)&(C)&(~D);
-assign x4=(~A)&(B)&(C)&(D);
-assign x5=(B)&(~C)&(D);
-assign F1=x1|x2|x3|x4|x5;
-endmodule
 
 
 
@@ -74,5 +76,5 @@ endmodule
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
 
-Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
+
 
