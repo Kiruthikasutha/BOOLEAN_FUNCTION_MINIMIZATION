@@ -37,16 +37,42 @@ Hardware – PCs, Cyclone II , USB flasher
 
 Developed by: RegisterNumber:*/
 
+**program**
+
+module combinationalcircuit(A,B,C,D,F1);
+input A,B,C,D;
+output F1;
+wire x1,x2,x3,x4,x5;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign F1=x1|x2|x3|x4|x5;
+endmodule
+
+
 
 **RTL realization**
 
-**Output:**
+![Screenshot 2024-03-25 082306](https://github.com/Kiruthikasutha/BOOLEAN_FUNCTION_MINIMIZATION/assets/144979570/1f074edb-5382-4184-9542-de7b8fc383e7)
 
-**RTL**
+
+**truth table**
+
+![Screenshot 2024-03-25 082338](https://github.com/Kiruthikasutha/BOOLEAN_FUNCTION_MINIMIZATION/assets/144979570/f0478674-6982-4de7-af91-790aebc27146)
+
+
+
 
 **Timing Diagram**
 
+![Screenshot 2024-03-25 082355](https://github.com/Kiruthikasutha/BOOLEAN_FUNCTION_MINIMIZATION/assets/144979570/480a8134-7a0d-4171-b84d-b4006a309556)
+
+
 **Result:**
+
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
 
